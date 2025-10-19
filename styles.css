@@ -1,56 +1,72 @@
-header.site-header {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    padding: 1rem 2rem !important;
-    background-color: #f5f5f5 !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
+/* Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ffffff; /* white background */
+    width: 100%;
+    box-sizing: border-box;
 }
 
-header.site-header .logo img {
-    height: 60px !important;
-    display: block !important;
+/* Logo */
+.site-header .logo img {
+    height: 60px;
 }
 
-header.site-header .search-cart {
-    display: flex !important;
-    align-items: center !important;
-    gap: 1rem !important;
+/* Search bar in the middle */
+.site-header .search-bar {
+    flex: 1;
+    margin: 0 2rem;
 }
 
-header.site-header .search-cart input {
-    padding: 0.5rem 1rem !important;
-    font-size: 1rem !important;
-    border: 1px solid #ccc !important;
-    border-radius: 5px !important;
+.site-header .search-bar input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-header.site-header .search-cart .cart {
-    font-size: 1.5rem !important;
-    cursor: pointer !important;
+/* Right icons */
+.site-header .right-icons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
-header.site-header .search-cart .social-icons a {
-    margin-left: 0.5rem !important;
-    text-decoration: none !important;
-    color: #333 !important;
-    font-weight: bold !important;
+.site-header .right-icons .cart {
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
+.site-header .right-icons .social-icons a {
+    margin-left: 0.5rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Responsive for mobile */
 @media (max-width: 768px) {
-    header.site-header {
-        flex-direction: column !important;
-        align-items: flex-start !important;
-        gap: 1rem !important;
+    .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
     }
 
-    header.site-header .search-cart {
-        width: 100% !important;
-        justify-content: space-between !important;
+    .site-header .search-bar {
+        margin: 0;
+        width: 100%;
     }
 
-    header.site-header .search-cart input {
-        flex: 1 !important;
+    .site-header .search-bar input {
+        width: 100%;
+    }
+
+    .site-header .right-icons {
+        width: 100%;
+        justify-content: space-between;
     }
 }
+
