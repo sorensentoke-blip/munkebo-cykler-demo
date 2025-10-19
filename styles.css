@@ -66,11 +66,11 @@
 
     .site-header .right-icons {
         width: 100%;
+        justify-content: space-between;
+    }
+}
 
-
-
-
-        /* HERO SECTION */
+/* HERO SECTION */
 .hero {
     position: relative;
     width: 100%;
@@ -130,7 +130,4 @@
     }
 }
 
-        justify-content: space-between;
-    }
-}
 
